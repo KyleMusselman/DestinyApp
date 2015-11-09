@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<?php
+ $apiKey = 'e821459548fc4e718e647223ee29f274';
+$ch = curl_init();
+‘https://www.bungie.net/platform/destiny/1/Stats/GetMembershipIdByDisplayName/XTeChSpEdX');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HEADER, array('X-API-Key: ' . $apiKey));
+
+$json = json_decode(curl_exec($ch));
+echo $json->Response;
+</body>
+</html>
