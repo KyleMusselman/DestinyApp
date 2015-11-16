@@ -29,22 +29,20 @@
         
       </div>
     </div>
-    <script>
-	   var apiKey = "e821459548fc4e718e647223ee29f274";
-	 
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "https://www.bungie.net/platform/Destiny/Manifest/InventoryItem/1274330687/", true);
-		xhr.setRequestHeader("X-API-Key", apiKey);
-		 
-		xhr.onreadystatechange = function(){
-		 if(this.readyState === 4 && this.status === 200){
-		  var json = JSON.parse(this.responseText);
-		  console.log(json.Response.data.inventoryItem.itemName); //Gjallarhorn
-		 }
-		}
-		 
-		xhr.send();
-	</script>
+	  
+	<img id="Subclass" src="#" title="Subclass"></img>
+	<img id="Primary_Weapon" src="#" title="Primary_Weapon"></img>
+	<img id="Special_Weapon" src="#" title="Special_Weapon"></img>
+	<img id="Heavy_Weapon" src="#" title="Heavy_Weapon"></img>
+	<img id="Ghost" src="#" title="Ghost"></img>
+	<img id="Helmet" src="#" title="Helmet"></img>
+	<img id="Gauntlets" src="#" title="Gauntlets"></img>
+	<img id="Chest" src="#" title="Chest"></img>
+	<img id="Leg" src="#" title="Leg"></img>
+	<img id="Class_Item" src="#" title="Class_Item"></img>
+	<img id="Artifact" src="#" title="Artifact"></img>
+
+	<script src="scripts/DestinyApp.js"></script> 
   </div>
 
   <!-- <script src="scripts/scripts.min.js?v=3.1.17"></script> -->
