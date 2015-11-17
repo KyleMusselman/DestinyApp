@@ -1638,3 +1638,38 @@ button.toast-close-button {
 .infuseDialog .bigValue {
   font-size: 32px;
 }
+
+#Subclass,
+#Primary_Weapon,
+#Special_Weapon,
+#Heavy_Weapon,
+#Ghost,
+#Shader,
+#Sparrow,
+#Ship{
+	max-width: 20%;
+	margin-top: 10%;
+	top: 50%;
+	float: left;
+	border: 1px #ddd;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+}
+
+#Helmet,
+#Gauntlets,
+#Chest,
+#Leg,
+#Class_Item,
+#Artifact,
+#Emblem,
+#Emote{
+	max-width: 20%;
+	margin-top: 10%;
+	top: 50%;
+	float: right;
+	border: 1px #ddd;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+}
+body{
+	padding: 23.5px;
+}
