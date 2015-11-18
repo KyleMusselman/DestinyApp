@@ -1,11 +1,13 @@
-(function(){
+(function (){
 	var apiKey = "e821459548fc4e718e647223ee29f274";
 	var itemNum;
+	var guardianNum;
+
 	for (i = 0; i < 16; i++){ 
 		getItemNum(i);
 		getImage(i, itemNum);
 	};
-	function getItemNum(i){ //Get ItemNum from database, Output ItemNum to variable
+	function getItemNum(){ //Get ItemNum from database, Output ItemNum to variable
 		
 		var xhr = new XMLHttpRequest();
 		xhr.open("GET", "https://www.bungie.net/platform/Destiny/TigerXbox/Account/4611686018433800293/", false);
@@ -14,7 +16,7 @@
 		xhr.onreadystatechange = function(){
 		 if(this.readyState === 4 && this.status === 200){
 		  var json = JSON.parse(this.responseText);
-		  itemNum = (json.Response.data.characters[2].characterBase.peerView.equipment[i].itemHash); 
+		  itemNum = (json.Response.data.characters[0].characterBase.peerView.equipment[i].itemHash); 
 		 }
 		}
 		xhr.send();

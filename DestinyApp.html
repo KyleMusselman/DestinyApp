@@ -17,21 +17,16 @@
     <div id="header">
       <div class="content">
         <span class="header-right">
-          <div dim-platform-choice class="header-right"></div>
-          <div dim-search-filter class="header-right"></div>
-          <div class="header-right" id="actions">
-            <span class="link" ng-click="app.refresh($event)" title="Refresh Destiny Data"><i ng-class="{'fa-spin': loadingTracker.active()}" class="fa fa-refresh"></i></span>
-            <span class="link" ng-click="app.showSetting($event)" title="Settings"><i class="fa fa-cog"></i></span>
-            <span class="link" ng-click="app.showFilters($event)" title="Filters"><i class="fa fa-filter"></i></span>
-          </div>
+		  <a id="button1" onclick="myfunction(0)"><span>Guardian 1</span></a>
+		  <a id="button2" onclick="myfunction(1)"><span>Guardian 2</span></a>
+		  <a id="button3" onclick="myfunction(2)"><span>Guardian 3</span></a>
         </span>
         <span class="logo">Destiny App</span>
         
       </div>
     </div>
-	<div>
-	</div>
-		<img id="Subclass" src="#" title="Subclass" style="max-width: 96px"></img>
+	
+		<img id="Subclass" src="#" title="Subclass" style="max-width: 96px" ></img>
 		<img id="Helmet" src="#" title="Helmet"></img><br>
 		<img id="Primary_Weapon" src="#" title="Primary_Weapon"></img>
 		<img id="Gauntlets" src="#" title="Gauntlets"></img><br>
@@ -47,11 +42,10 @@
 		<img id="Emblem" src="#" title="Emblem"></img><br>
 		<img id="Ship" src="#" title="Ship"></img>
 		<img id="Emote" src="#" title="Emote"></img>
-	
+		
 	<script src="scripts/DestinyApp.js"></script> 
   </div>
 
-  <!-- <script src="scripts/scripts.min.js?v=3.1.17"></script> -->
 </body>
 
 </html>
